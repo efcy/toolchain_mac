@@ -1,0 +1,7 @@
+/* Generated automatically. */
+static const char configuration_arguments[] = "/home/thomas/x-tools/.build/src/gcc-4.9.3/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=i686-berlinunited-linux-gnu --prefix=/home/thomas/x-tools/naocross_gcc52_linux --with-sysroot=/home/thomas/x-tools/naocross_gcc52_linux/i686-berlinunited-linux-gnu/sysroot --enable-languages=c,c++ --with-arch=i686 --with-pkgversion='crosstool-NG crosstool-ng-1.22.0' --enable-__cxa_atexit --disable-libmudflap --disable-libgomp --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libsanitizer --with-gmp=/home/thomas/x-tools/.build/i686-berlinunited-linux-gnu/buildtools --with-mpfr=/home/thomas/x-tools/.build/i686-berlinunited-linux-gnu/buildtools --with-mpc=/home/thomas/x-tools/.build/i686-berlinunited-linux-gnu/buildtools --with-isl=/home/thomas/x-tools/.build/i686-berlinunited-linux-gnu/buildtools --with-cloog=/home/thomas/x-tools/.build/i686-berlinunited-linux-gnu/buildtools --with-libelf=/home/thomas/x-tools/.build/i686-berlinunited-linux-gnu/buildtools --enable-lto --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --enable-threads=posix --disable-nls --disable-multilib --with-local-prefix=/home/thomas/x-tools/naocross_gcc52_linux/i686-berlinunited-linux-gnu/sysroot --enable-long-long";
+static const char thread_model[] = "posix";
+
+static const struct {
+  const char *name, *value;
+} configure_default_options[] = { { "cpu", "generic" }, { "arch", "i686" } };

@@ -1,0 +1,15 @@
+# ignore native installation directories
+/toolchain_native/extern/extracted
+/toolchain_native/extern/include
+!/toolchain_native/extern/include/fdeep
+!/toolchain_native/extern/include/fplus
+/toolchain_native/extern/lib
+/toolchain_native/extern/share
+/toolchain_native/extern/etc
+/toolchain_native/extern/bin
+
+# ignore generated files
+projectconfig.user.lua
+
+# DONT ignore these files
+!/toolchain_nao/compiler/premake5.lua

@@ -1,0 +1,10 @@
+prefix=/mnt/d/RoboCup/repo/ToolChainLinux/toolchain_native/extern
+exec_prefix=/mnt/d/RoboCup/repo/ToolChainLinux/toolchain_native/extern
+libdir=/mnt/d/RoboCup/repo/ToolChainLinux/toolchain_native/extern/lib
+includedir=/mnt/d/RoboCup/repo/ToolChainLinux/toolchain_native/extern/include/libjpeg-turbo
+
+Name: libjpeg
+Description: A SIMD-accelerated JPEG codec that provides the libjpeg API
+Version: 2.0.3
+Libs: -L${libdir} -ljpeg
+Cflags: -I${includedir}
