@@ -2,7 +2,6 @@ FROM ubuntu:24.04
 
 # Install system dependencies
 RUN apt-get update -y --fix-missing \
-
     && apt-get --no-install-recommends install openjdk-8-jre build-essential \
     cmake zlib1g-dev git libreadline-dev gettext cppcheck python3-pip curl jq \
     clang llvm lld wget tree pigz xxd debootstrap unzip gpg rsync uuid-dev -y
@@ -27,3 +26,5 @@ ENV EXTERN_PATH_NATIVE="${NAOTH_TOOLCHAIN_PATH}/toolchain_native/extern/"
 
 # setup the toolchain libs
 RUN yes Y | ./setup.sh && rm -rf toolchain_native/extern/extracted && rm -rf toolchain_native/extern/downloads
+
+#docker run -it -v $PWD:/my-code test /my-code/NaoTHSoccer/Make/compileGame.sh -j 3
