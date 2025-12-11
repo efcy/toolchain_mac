@@ -1,3 +1,14 @@
-# Berlin United LinuxToolChain
+# Berlin United Mac ToolChain
 
-Documentation can be found at [https://docs.berlinunited.org/](https://docs.berlinunited.org/)
+You can build this with
+```
+docker build -t toolchain_mac --progress=plain -f Dockerfile .
+```
+
+then use it in the naoth repo path like this:
+
+```
+docker run -it -v $PWD:/code -w /code/NaoTHSoccer/Make/ test2 ./compile_linux_native.sh
+```
+
+Note: you need to be in a folder that has `NaoTHSoccer` as subfolder

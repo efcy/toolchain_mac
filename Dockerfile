@@ -21,10 +21,12 @@ COPY . /naoth/toolchain
 
 ENV NAOTH_TOOLCHAIN_PATH=/naoth/toolchain
 ENV PATH="${PATH}:${NAOTH_TOOLCHAIN_PATH}/toolchain_native/extern/bin:${NAOTH_TOOLCHAIN_PATH}/toolchain_native/extern/lib"
-ENV NAO_CTC="${NAOTH_TOOLCHAIN_PATH}/toolchain_nao/"
+ENV NAO_CTC="${NAOTH_TOOLCHAIN_PATH}/toolchain_nao_ubuntu/"
 ENV EXTERN_PATH_NATIVE="${NAOTH_TOOLCHAIN_PATH}/toolchain_native/extern/"
 
 # setup the toolchain libs
 RUN yes Y | ./setup.sh && rm -rf toolchain_native/extern/extracted && rm -rf toolchain_native/extern/downloads
 
-#docker run -it -v $PWD:/my-code test /my-code/NaoTHSoccer/Make/compileGame.sh -j 3
+ENV CC=clang
+ENV CXX=clang++
+ENV LD=ld.lld
